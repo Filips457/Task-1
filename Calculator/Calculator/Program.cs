@@ -24,7 +24,8 @@ public class Program
             {
                 Console.WriteLine($"Ошибка: {ex.Message}");
             }
-            Console.WriteLine("Воспользоваться ещё раз калькулятором? (y/n)");
+            Console.WriteLine("Нажмите 'y', чтобы ещё раз воспользоваться калькулятором.");
+            Console.WriteLine("Нажмите любую другую клавишу для выхода.");
         } while (Console.ReadKey(true).Key == ConsoleKey.Y);
     }
 }
