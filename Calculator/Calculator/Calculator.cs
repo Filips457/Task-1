@@ -9,14 +9,11 @@ public class Calculator
 
     public double Calculate()
     {
-        Console.Write("Введите первый операнд: ");
-        firstOperand = operandReader.GetOperand();
+        firstOperand = operandReader.GetOperand("Введите первый операнд: ");
 
-        Console.Write("Введите оператор: ");
-        calculateDelegate = operandReader.GetOperator();
+        calculateDelegate = operandReader.GetOperator("Введите оператор: ");
 
-        Console.Write("Введите второй операнд: ");
-        secondOperand = operandReader.GetOperand();
+        secondOperand = operandReader.GetOperand("Введите второй операнд: ");
 
         return calculateDelegate(firstOperand, secondOperand);
     }

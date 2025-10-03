@@ -2,13 +2,19 @@
 
 public class OperandReader
 {
-    public double GetOperand()
+    public double GetOperand(string? message = null)
     {
+        if (message != null)
+            Console.Write(message);
+
         return double.Parse(Console.ReadLine());
     }
 
-    public Func<double, double, double> GetOperator()
+    public Func<double, double, double> GetOperator(string? message = null)
     {
+        if (message != null)
+            Console.Write(message);
+
         char key = Console.ReadKey().KeyChar;
         Console.WriteLine();
 
